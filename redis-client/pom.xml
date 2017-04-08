@@ -1,22 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>iot.hackathon.innovation.starteam</groupId>
-  <artifactId>main-webapp</artifactId>
+  <artifactId>redis-client</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  <name>Main webapp</name>
+  <packaging>jar</packaging>
+  <name>Redis Client</name>
   
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.0.0</version>
-       <configuration>
-          <webappDirectory>/sample/servlet/container/deploy/directory</webappDirectory>
-       </configuration>
-      </plugin>
+    
     </plugins>
   </build>
+  
+	<dependency>
+		<groupId>redis.clients</groupId>
+		<artifactId>jedis</artifactId>
+    <version>2.9.0</version>
+	</dependency>
+
 
 </project>

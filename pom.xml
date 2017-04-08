@@ -7,6 +7,7 @@
   <name>Parent POM For Innovation Star Team</name>
   <modules>
     <module>main-webapp</module>
+	<module>redis-client</module>
   </modules>
     <build>
         
@@ -24,6 +25,11 @@
     <dependency>
 	    <groupId>iot.hackathon.innovation.starteam</groupId>
 		<artifactId>main-webapp</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	 <dependency>
+	    <groupId>iot.hackathon.innovation.starteam</groupId>
+		<artifactId>redis-client</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</dependency>
   </dependencies>
