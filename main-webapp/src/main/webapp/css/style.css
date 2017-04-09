@@ -5,7 +5,7 @@ body {
 .container { 
   background-color: white; 
   padding: 20px; 
-  width: 1800px;
+  width: 1850px;
   float: left;
 }
 h2 {text-align: center;}
@@ -13,14 +13,14 @@ h2 {text-align: center;}
 svg {border: 1px solid black;}
 
 .room {
-  stroke: #0000ff;
-  fill:none;
-  stroke-width: 3;	
+  fill: none;
+  stroke: deepskyblue;
+  stroke-width: 4;  
 }
 
 .sensor {
   fill:#b8ffec;
-  font-size: 15px;
+  font-size: 26px;
   stroke:rgb(0,0,0);
 }
 

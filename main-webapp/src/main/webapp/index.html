@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html >
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="UTF-8">
   <title>Floor plan</title>
       <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
   <body ng-app="floorplan">
   <div ng-controller="SensorLayoutCtrl">
   <div class="container">
 
 
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     version="1.1"
-     preserveAspectRatio="xMinYMin meet" 
-     viewBox="{{startX}} {{startY}} {{mapWidth}} {{mapHeight}}">
+<svg width="1850" height="900">
   <g>
   <title> {{roomTitle}} </title>
     
     <g>
   <title>Room outline</title>
-  <path class="room"  d="{{room1Outline}}" />
-  <path class="room"  d="{{room2Outline}}" />
-  <path class="room"  d="{{room3Outline}}" />
+<path class="room"  d="M0 0 L0 300 L750 300 L750 0 Z" />  
+<path class="room"  d="M0 300 L0 600 L750 600 L750 300 Z" />  
+<path class="room"  d="M0 600 L0 900 L750 900 L750 600 Z" />  
+
+<path class="room"  d="M1100 0 L1100 300 L1850 300 L1850 0 Z" /> 
+<path class="room"  d="M1100 300 L1100 600 L1850 600 L1850 300 Z" /> 	 
+<path class="room"  d="M1100 600 L1100 900 L1850 900 L1850 600 Z" />  
+
+<path class="room"  d="M0 0 L1800 0 Z" />
+<path class="room"  d="M750 600 L1100 600 Z" />
+<path class="room"  d="M0 900 L1800 900 Z" />
+
 </g>
     
           
 <!-- text example -->
-        <text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="24" id="svg_78" y="25" x="400" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">{{roomTitle}}</text>
-	<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="24" id="svg_78" y="25" x="120" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Room 1</text>
-		<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="24" id="svg_78" y="175" x="120" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Room 2</text>
-			<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="24" id="svg_78" y="325" x="120" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Room 3</text>
+			<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="48" id="svg_78" y="75" x="760" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">{{roomTitle}}</text>
+			
+			<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="48" id="svg_78" y="75" x="270" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Room 1</text>
+			
+			<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="48" id="svg_78" y="375" x="270" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Room 2</text>
+			
+			<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="48" id="svg_78" y="675" x="270" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Room 3</text>
+			
+			<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="48" id="svg_78" y="75" x="1270" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Room 4</text>
+			
+			<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="48" id="svg_78" y="375" x="1270" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Room 5</text>
+			
+			<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="48" id="svg_78" y="675" x="1270" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Room 6</text>
+			
+			<text stroke="#000000" transform="matrix(1.1191343069076538,0,0,1,-33.64427286013961,0) " xml:space="preserve" font-size="48" id="svg_78" y="675" x="780" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Storage</text>
 <!-- text example -->
 
 
@@ -46,7 +62,8 @@
               ng-attr-id="{{s.compId}}"
               x="0" y="0"
               ng-attr-width="{{s.sWidth}}"
-              ng-attr-height="{{s.sHeight}}"/>
+              ng-attr-height="{{s.sHeight}}"
+			  onclick="changeState('{{s.compId}}')"/>
       <text class="sensor" >
             {{s.compId}}        
           </text>
