@@ -1,0 +1,30 @@
+body { 
+  background-color: lightgrey; 
+}
+
+.container { 
+  background-color: white; 
+  padding: 20px; 
+  width: 1800px;
+  float: left;
+}
+h2 {text-align: center;}
+
+svg {border: 1px solid black;}
+
+.room {
+  stroke: #0000ff;
+  fill:none;
+  stroke-width: 3;	
+}
+
+.sensor {
+  fill:#b8ffec;
+  font-size: 15px;
+  stroke:rgb(0,0,0);
+}
+
+
+. {
+    fill:#ff0000;
+  }
