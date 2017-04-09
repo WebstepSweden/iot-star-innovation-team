@@ -50,12 +50,15 @@ def add_redis(event):
             )
     elif _type == 'proximity':
         object_present = event.get('state_changed', {}).get('object_present')
-        if object_present is not None:
+        current_open_state = rc.hget(thing_key, 'open')
+        if object_present is not None and int(not object_present) != int(current_open_state):
             _open = int(not object_present)
             rc.hset(thing_key, 'open', _open)
             rc.publish('events', '{}:open:{}'.format(location_key, _open))
     elif _type == 'touch':
-        rc.publish('events', location_key)
+        pressed = event.get('state_changed', {}).get('touch')
+        if pressed:  # Only publish when pressed, not heartbeats
+            rc.publish('events', location_key)
 
 
 async def fetch(session):
