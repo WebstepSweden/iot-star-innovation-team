@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<STYLE>
+ .roomLayer{
+    position:absolute;
+	left:100px;
+	top:100px;
+	background: url(Rum_stangd.jpg) center center no-repeat;
+
+ }
+</STYLE>
+<SCRIPT type="text/javascript" >
+   function openDoor(imgSource) {
+        
+        document.getElementById("room101").src='img/Rum_oppnad.jpg';
+		document.getElementById("room101").class='roomLayer';
+    }
+</SCRIPT>
+</HEAD>
+
+
+<BODY>
+   <DIV id="mainAreaMap"> 
+    <INPUT type="button" value="oppnaDoor" onClick="openDoor()" />
+	<IMG src="img/Rumskiss_tom.jpg" />
+	<IMG id="room101" src="img/Rum_stangd.jpg" class="roomLayer"/>
+   </DIV>
+</BODY>
+</HTML>

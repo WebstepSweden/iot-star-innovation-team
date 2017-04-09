@@ -1,0 +1,17 @@
+Required:
+1.	As a user I want to see list of the rooms and items in common areas on one page so that I can see what rooms/items can inform me about the status change
+2.	As a user I want to see detailed plan of the building with rooms and common areas and all sensors so that I can receive information from which part of the building a signal was received
+3.	As a user I want to see in the list where notice or alert was trigged so that I can react faster
+4.	As a user I want to see on the plan where notice or alert was trigged so that I can react faster
+5.	As a user I want to get alert when temperature over stovetop rises above 60 degrees so that I can be informed
+6.	As a user I want to be notified when if tenant doesn’t took pills until 10:00 so that I can be informed
+7.	As a user I want to be notified when front door to the room is open so that I can be informed
+8.	As a user I want to get alert when critical for safety common objects are not in their places so that I can be informed
+9.	As a user I want to see detailed information about notice or alert by clicking on it  either in list or in plan  so that I can be informed
+10.	As a user I want to see detailed information about the room and the tenant by clicking on the tenant name link so that I can work more effective
+11.	As a user I want to see historical data by clicking detailed information about the sensor by clicking on the sensor link either in list or in plan so that I can work more effective
+
+Nice to have:
+12.	As a user I want to get alert when tenant leave the room with stovetop turned on so that I can be informed
+13.	As a user I want to get alert when the bathroom is flooded so that I can be informed
+14.	As a user I want to be notified when user
